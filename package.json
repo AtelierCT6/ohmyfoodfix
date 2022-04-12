@@ -1,0 +1,22 @@
+{
+  "name": "new-p3",
+  "version": "1.0.0",
+  "description": "omyfood p3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch  style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtelierCT6/ohmyfood.git"
+  },
+  "author": "Christophe RANNOU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtelierCT6/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/AtelierCT6/ohmyfood#readme",
+  "devDependencies": {
+    "sass": "^1.50.0"
+  }
+}
