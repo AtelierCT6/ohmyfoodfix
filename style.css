@@ -19,6 +19,11 @@ h2 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
   font-family: "shrikhand", cursive;
   text-align: center;
@@ -137,11 +142,36 @@ main .city i {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.menu .card .card__image {
-  background-image: url("/images/menu-1.jpg");
+.menu .new {
+  position: relative;
+}
+.menu .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 35px;
+  width: 80px;
+  background-color: #99E2D0;
+  display: grid;
+  place-items: center;
+  right: 16px;
+  top: 16px;
+}
+.menu .card__image {
   height: 240px;
   background-size: cover;
-  border-radius: 48px;
+  border-radius: 20px;
+}
+.menu .card__image-1 {
+  background-image: url("/images/menu-1.jpg");
+}
+.menu .card__image-2 {
+  background-image: url("/images/menu-2.jpg");
+}
+.menu .card__image-3 {
+  background-image: url("/images/menu-3.jpg");
+}
+.menu .card__image-4 {
+  background-image: url("/images/menu-4.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */
