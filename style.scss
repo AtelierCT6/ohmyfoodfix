@@ -155,6 +155,7 @@ main .city i {
             grid-template-columns: repeat(1, 1fr);
         }
     }
+    
 
     .new {
         position: relative;
@@ -218,10 +219,12 @@ main .city i {
               opacity: 0;
               transition: all 200ms ease-in-out;
           }
-          &:hover .fas {
+        
+            .fas:hover {
               opacity: 1;
               transform: translateY(-50%) scale(1.2);
           }
+          
         }  
     }
     

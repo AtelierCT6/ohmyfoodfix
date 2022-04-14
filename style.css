@@ -211,7 +211,7 @@ main .city i {
   opacity: 0;
   transition: all 200ms ease-in-out;
 }
-.menu .card__description:hover .fas {
+.menu .card__description .fas:hover {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
 }
