@@ -14,6 +14,10 @@ body {
 
 main {
     padding: 0 116px;
+    @media (max-width: 1000px) {
+        padding: 0 16px;
+    }
+    
 }
 
 h2 {
@@ -141,6 +145,7 @@ main .city i {
 
 .menu {
     background-color: #f6f6f6;
+    margin-bottom: 32px;
 
     .menus__cards {
         display: grid;
@@ -186,13 +191,18 @@ main .city i {
         }
          &__description {
              position: relative;
+             background-color: white;
+             border-radius: 0 0 20px 20px;
           h3,
           p {
-              margin: 8px;
+              padding: 4px;
+              
           }
+
           p {
-              padding-top: 8px;
+            padding-bottom: 16px;
           }
+        
           i {
               font-size: 32px;
               position: absolute;
@@ -200,8 +210,34 @@ main .city i {
               top: 50%;
               transform: translateY(-50%);
           }
+          .fas {
+              color: transparent;
+              background-image: linear-gradient(0deg,rgba(147,86,220,1),rgba(255,121,218,1));
+              background-clip: text;
+              -webkit-background-clip: text;
+              opacity: 0;
+              transition: all 200ms ease-in-out;
+          }
+          &:hover .fas {
+              opacity: 1;
+              transform: translateY(-50%) scale(1.2);
+          }
         }  
     }
-
     
 }
+
+footer {
+    background-color: #353535;
+    padding: 16px 32px;
+    color: white;
+}
+h4 {
+    font-family: "shrikhand", sans-serif;
+    font-size: 20px;
+    padding: 10px 2;
+    margin-left: 2px;
+}
+ p {
+     padding: 3px;
+ }
