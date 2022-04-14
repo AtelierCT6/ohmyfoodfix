@@ -19,6 +19,11 @@ h2 {
   margin: 0;
 }
 
+h3,
+p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -159,7 +164,7 @@ main .city i {
 .menu .card__image {
   height: 240px;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
 }
 .menu .card__image-1 {
   background-image: url("/images/menu-1.jpg");
@@ -172,6 +177,23 @@ main .city i {
 }
 .menu .card__image-4 {
   background-image: url("/images/menu-4.jpg");
+}
+.menu .card__description {
+  position: relative;
+}
+.menu .card__description h3,
+.menu .card__description p {
+  margin: 8px;
+}
+.menu .card__description p {
+  padding-top: 8px;
+}
+.menu .card__description i {
+  font-size: 32px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */
