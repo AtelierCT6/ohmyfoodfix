@@ -11,7 +11,7 @@ body {
 }
 
 main {
-  padding: 0 116px;
+  padding: 0 60px;
 }
 @media (max-width: 1000px) {
   main {
@@ -27,6 +27,24 @@ h2 {
 h3,
 p {
   margin: 0;
+}
+
+h4 {
+  font-family: "shrikhand", sans-serif;
+  font-size: 20px;
+  padding: 10px 2;
+  margin-left: 2px;
+}
+
+p {
+  padding: 3px;
+}
+
+h5 {
+  font-family: shrikhand, sans sans-serif;
+  font-size: x-large;
+  padding-top: 20px;
+  padding-left: 30px;
 }
 
 a {
@@ -173,16 +191,16 @@ main .city i {
   border-radius: 20px 20px 0 0;
 }
 .menu .card__image-1 {
-  background-image: url("/images/menu-1.jpg");
+  background-image: url("./images/menu-1.jpg");
 }
 .menu .card__image-2 {
-  background-image: url("/images/menu-2.jpg");
+  background-image: url("./images/menu-2.jpg");
 }
 .menu .card__image-3 {
-  background-image: url("/images/menu-3.jpg");
+  background-image: url("./images/menu-3.jpg");
 }
 .menu .card__image-4 {
-  background-image: url("/images/menu-4.jpg");
+  background-image: url("./images/menu-4.jpg");
 }
 .menu .card__description {
   position: relative;
@@ -196,14 +214,17 @@ main .city i {
 .menu .card__description p {
   padding-bottom: 16px;
 }
-.menu .card__description i {
+
+.menu i,
+.menu_full i {
   font-size: 32px;
   position: absolute;
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
 }
-.menu .card__description .fas {
+.menu .fas,
+.menu_full .fas {
   color: transparent;
   background-image: linear-gradient(0deg, rgb(147, 86, 220), rgb(255, 121, 218));
   background-clip: text;
@@ -211,26 +232,31 @@ main .city i {
   opacity: 0;
   transition: all 200ms ease-in-out;
 }
-.menu .card__description .fas:hover {
+.menu .fas:hover,
+.menu_full .fas:hover {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
+  cursor: pointer;
+}
+
+.menu_full {
+  position: relative;
+  background-color: #f6f6f6;
+  border-radius: 20px 20px 0 0;
+  margin-top: -60px;
+}
+
+.menu-pic {
+  max-width: 100%;
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
 }
 
 footer {
   background-color: #353535;
   padding: 16px 32px;
   color: white;
-}
-
-h4 {
-  font-family: "shrikhand", sans-serif;
-  font-size: 20px;
-  padding: 10px 2;
-  margin-left: 2px;
-}
-
-p {
-  padding: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */

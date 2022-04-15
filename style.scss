@@ -1,4 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+
 
 *,
 ::before,
@@ -13,7 +15,7 @@ body {
 }
 
 main {
-    padding: 0 116px;
+    padding: 0 60px;
     @media (max-width: 1000px) {
         padding: 0 16px;
     }
@@ -31,6 +33,26 @@ h3,
 p {
     margin:0;
 }
+
+h4 {
+    font-family: "shrikhand", sans-serif;
+    font-size: 20px;
+    padding: 10px 2;
+    margin-left: 2px;
+}
+
+p {
+     padding: 3px;
+ }
+
+
+
+h5 {
+      font-family: shrikhand, sans sans-serif;
+      font-size: x-large;
+      padding-top: 20px;
+      padding-left: 30px;
+ }
 
 a {
     text-decoration: none;
@@ -179,16 +201,16 @@ main .city i {
             border-radius: 20px 20px 0 0;
         }
         &__image-1 {
-            background-image: url("/images/menu-1.jpg");
+            background-image: url("./images/menu-1.jpg");
         }   
         &__image-2 {
-            background-image: url("/images/menu-2.jpg");
+            background-image: url("./images/menu-2.jpg");
         }
         &__image-3 {
-            background-image: url("/images/menu-3.jpg");
+            background-image: url("./images/menu-3.jpg");
         }
         &__image-4 {
-            background-image: url("/images/menu-4.jpg");
+            background-image: url("./images/menu-4.jpg");
         }
          &__description {
              position: relative;
@@ -203,31 +225,50 @@ main .city i {
           p {
             padding-bottom: 16px;
           }
-        
-          i {
-              font-size: 32px;
-              position: absolute;
-              right: 16px;
-              top: 50%;
-              transform: translateY(-50%);
-          }
-          .fas {
-              color: transparent;
-              background-image: linear-gradient(0deg,rgba(147,86,220,1),rgba(255,121,218,1));
-              background-clip: text;
-              -webkit-background-clip: text;
-              opacity: 0;
-              transition: all 200ms ease-in-out;
-          }
-        
-            .fas:hover {
-              opacity: 1;
-              transform: translateY(-50%) scale(1.2);
-          }
           
         }  
     }
     
+}
+
+.menu,
+.menu_full {
+    i {
+        font-size: 32px;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .fas {
+        color: transparent;
+        background-image: linear-gradient(0deg,rgba(147,86,220,1),rgba(255,121,218,1));
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: all 200ms ease-in-out;
+    }
+  
+    .fas:hover {
+        opacity: 1;
+        transform: translateY(-50%) scale(1.2);
+        cursor: pointer;
+    }
+}
+
+
+.menu_full{
+    position: relative;
+    background-color: #f6f6f6;
+    border-radius: 20px 20px 0 0;
+    margin-top: -60px;
+}
+
+.menu-pic {
+    max-width: 100%;
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
 }
 
 footer {
@@ -235,12 +276,5 @@ footer {
     padding: 16px 32px;
     color: white;
 }
-h4 {
-    font-family: "shrikhand", sans-serif;
-    font-size: 20px;
-    padding: 10px 2;
-    margin-left: 2px;
-}
- p {
-     padding: 3px;
- }
+
+
