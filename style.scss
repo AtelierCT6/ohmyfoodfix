@@ -24,7 +24,7 @@ body {
 main {
     padding: 0 60px;
     @media (max-width: 1000px) {
-        padding: 0 16px;
+        padding: 0 0px;
     }
     
 }
@@ -122,12 +122,16 @@ main .city i {
 .explorer button:hover {
     transform: scale(1.02);
     opacity: 0.9;
+    box-shadow: 5px 5px 5px #C7C7C7;
+    
 }
 
 
 .tuto {
     counter-reset: steps;
     margin-bottom: 32px;
+    
+    
    & ol {
        display: flex;
        gap: 32px;
@@ -168,10 +172,25 @@ main .city i {
    }
 }
 
+.tuto {
+    @media (max-width:1000px) {
+        margin-right: 20px;
+    }
+    
+
+}
+
+
+
 .tuto li:hover  {
     transform: scale(1.02);
     opacity: 0.9;
+    background-color: rgba(147,86,220,.2);
+    .fas {
+        color: #9356dc;
+    }
   }
+
 
 .menu {
     background-color: #f6f6f6;
@@ -189,6 +208,7 @@ main .city i {
 
     .new {
         position: relative;
+        
     }
     .new::before {
         content: "Nouveau";
@@ -202,7 +222,15 @@ main .city i {
         top: 16px;
     }
 
+    
+
     .card {
+        transition: 0.3s;
+        border-radius: 20px ;
+        box-shadow: 5px 5px 5px #C7C7C7;
+        
+        
+
         &__image {
             height: 240px;
             background-size: cover;
@@ -237,7 +265,12 @@ main .city i {
         }  
     }
 }
-
+.card:hover {
+    
+    transform: scale(1.01);
+        
+    
+}
 .menu,
 .menu_full {
     i {
@@ -288,6 +321,11 @@ main .city i {
     object-fit: cover;
 }
 
+.arrow {
+    padding-left: 2%;
+    padding-right: 38%;
+}
+
 .menus-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -310,6 +348,7 @@ main .city i {
 
         position: relative;
         margin-bottom: 20px;
+        margin-left: 20px;
         &::after {
             content: "";
             position: absolute;
@@ -331,6 +370,7 @@ main .city i {
     overflow: hidden;
     cursor: pointer;
     margin-bottom: 20px;
+    margin-inline: 20px;
 
     p{
         padding-left: 20px;
