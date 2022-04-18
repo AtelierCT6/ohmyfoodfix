@@ -8,6 +8,22 @@
         transform: rotate(0);
     }
 }
+@keyframes appear {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    to{
+        transform: scale(0);
+    }
+}
 
 *,
 ::before,
@@ -74,6 +90,16 @@ header {
     padding: 0.3rem;
     margin: 0;
     position: relative;
+}
+
+.loader {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background-color: #ffffff;
+    opacity: 0.9;
+    animation: disappear 2s;
+    animation-fill-mode: forwards;
 }
 
 main .city {
@@ -208,6 +234,7 @@ main .city i {
 
     .new {
         position: relative;
+
         
     }
     .new::before {
@@ -254,7 +281,8 @@ main .city i {
              border-radius: 0 0 20px 20px;
           h3,
           p {
-              padding: 4px;
+              padding-left: 8px;
+              padding-top: 6px;
               
           }
 
@@ -338,6 +366,11 @@ main .city i {
 
 }
 
+.menus__category {
+    overflow: hidden;
+    
+
+}
 
 .menu_bg {
     background-color: #f6f6f6;
@@ -362,6 +395,12 @@ main .city i {
 }
 
 .menu-items {
+    @for $i from 2 through 4 {
+     &:nth-child(#{$i}) {
+      animation-delay: 100ms * $i;
+      }
+    }
+
     background-color: white;
     border-radius: 16px;
     box-shadow: 5px 5px 5px #C7C7C7;
@@ -371,7 +410,10 @@ main .city i {
     cursor: pointer;
     margin-bottom: 20px;
     margin-inline: 20px;
-
+    overflow: hidden;
+    animation: appear 1s;
+    
+    
     p{
         padding-left: 20px;
     }
@@ -392,6 +434,7 @@ main .city i {
         margin-right: -60px;
         transition: all 0.3s;
         width: 60px;
+        flex-shrink: 0;
 
         i {
         color: #99E2D0;
@@ -416,8 +459,8 @@ main .city i {
 
     &__description {
         overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        // white-space: nowrap;
+        // text-overflow: ellipsis;
 
         p {
         overflow: hidden;
