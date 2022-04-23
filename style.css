@@ -163,6 +163,15 @@ main .city i {
   box-shadow: 5px 5px 5px #C7C7C7;
 }
 
+.tuto h2,
+.menu h2 {
+  padding-left: 2%;
+}
+
+.firstpage {
+  margin-top: -30px;
+}
+
 .tuto {
   counter-reset: steps;
   margin-bottom: 32px;
