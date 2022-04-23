@@ -62,7 +62,7 @@ p {
 h4 {
   font-family: "shrikhand", sans-serif;
   font-size: 20px;
-  padding: 10px 2;
+  padding: 10px 2px;
   margin-left: 2px;
 }
 
@@ -169,7 +169,7 @@ main .city i {
 }
 @media (max-width: 600px) {
   .tuto {
-    padding-left: 55px;
+    padding-left: 40px;
   }
 }
 .tuto ol {
@@ -232,6 +232,11 @@ main .city i {
 .menu {
   background-color: #f6f6f6;
   margin-bottom: 32px;
+}
+@media (max-width: 1000px) {
+  .menu {
+    padding-left: 40px;
+  }
 }
 .menu .menus__cards {
   display: grid;
@@ -434,7 +439,7 @@ main .city i {
   justify-content: center;
   background-color: white;
   width: 25px;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   border-radius: 16px;
 }
 .menu-items:hover .menu-items__check {
