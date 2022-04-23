@@ -26,6 +26,12 @@
     }
 }
 
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 *,
 ::before,
 ::after
@@ -104,20 +110,32 @@ header {
 }
 
 .loader {
+    
     position: fixed;
+    display: grid;
+    place-items: center;
     inset: 0;
     z-index: 1;
     background-color: #ffffff;
-    opacity: 0.9;
-    animation: disappear 3s;
-    animation-fill-mode: forwards;
+    // opacity: 0.9;
+    animation: disappear 1s forwards;
+    animation-delay: 2s;
+    transform-origin: top;
+    
+    &::after {
+        content: "";
+        height: 100px;
+        width: 100px;
+        border-bottom: 5px solid #9356dc;
+        border-right: 5px solid #99E2D0;
+        border-top: 5px solid #EB7EDC;
+        border-left: transparent;
+        border-radius: 50%;
+        animation: spin 2s infinite linear;
+        
+    }
 }
 
-//     p {
-//         font-family: shrikhand, sans-serif;
-        
-//     }
-// }
 
 main .city {
     display: flex;
@@ -173,12 +191,16 @@ main .city i {
 .tuto {
     counter-reset: steps;
     margin-bottom: 32px;
+    @media (max-width: 600px) {
+        padding-left: 55px;
+    }
     
     
    & ol {
        display: flex;
        gap: 32px;
        padding-inline: 35px;
+       padding-bottom: 25px;
        @media (max-width: 1000px) {
         flex-direction: column;
         
