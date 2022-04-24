@@ -118,9 +118,9 @@ header {
         content: "";
         height: 100px;
         width: 100px;
-        border-bottom: 8px solid #9356dc;
-        border-right:8px solid #99E2D0;
-        border-top: 8px solid #EB7EDC;
+        border-bottom: 6px solid #9356dc;
+        border-right:6px solid #99E2D0;
+        border-top: 6px solid #EB7EDC;
         border-left: transparent;
         border-radius: 50%;
         animation: spin 2s infinite linear;
@@ -505,7 +505,7 @@ main .city i {
 
     &__description {
         overflow: hidden;
-        
+
 
         p {
         overflow: hidden;
