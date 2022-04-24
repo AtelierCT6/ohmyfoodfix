@@ -44,13 +44,6 @@ body {
     font-family: "roboto", sans-serif;
 }
 
-main {
-    // padding: 0 60px;
-    // @media (max-width: 1000px) {
-    //     padding: 0 0px;
-    // }
-    
-}
 
 .pagestitle {
     display: flex;
@@ -117,8 +110,7 @@ header {
     inset: 0;
     z-index: 1;
     background-color: #ffffff;
-    // opacity: 0.9;
-    animation: disappear 1s forwards;
+    animation: disappear 600ms forwards;
     animation-delay: 2s;
     transform-origin: top;
     
@@ -126,9 +118,9 @@ header {
         content: "";
         height: 100px;
         width: 100px;
-        border-bottom: 5px solid #9356dc;
-        border-right: 5px solid #99E2D0;
-        border-top: 5px solid #EB7EDC;
+        border-bottom: 8px solid #9356dc;
+        border-right:8px solid #99E2D0;
+        border-top: 8px solid #EB7EDC;
         border-left: transparent;
         border-radius: 50%;
         animation: spin 2s infinite linear;
@@ -513,8 +505,7 @@ main .city i {
 
     &__description {
         overflow: hidden;
-        // white-space: nowrap;
-        // text-overflow: ellipsis;
+        
 
         p {
         overflow: hidden;
