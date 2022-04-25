@@ -132,6 +132,7 @@ main .city i {
 /* EXPLORER */
 .explorer {
   text-align: center;
+  padding-bottom: 15px;
 }
 
 .explorer h2 {
