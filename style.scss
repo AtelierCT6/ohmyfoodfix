@@ -273,6 +273,7 @@ main .city i {
         padding-inline: 32px;
         @media (max-width: 1000px) {
             grid-template-columns: repeat(1, 1fr);
+            padding-left: 0;
             
         }
     }
