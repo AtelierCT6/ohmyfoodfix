@@ -462,6 +462,7 @@ main .city i {
     animation-fill-mode: both;
     transform: scale(0);
     
+    
     p{
         padding-left: 20px;
     }
@@ -507,6 +508,7 @@ main .city i {
 
     &__description {
         overflow: hidden;
+        
 
 
         p {
